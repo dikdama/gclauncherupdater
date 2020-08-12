@@ -12,16 +12,22 @@ Simple API for update launcher of GC in VB
 
 Esse projeto contém o updater, o arquivo que atualiza o `launcher-main` do meu projeto principal;
 
-	`+ Ele verifica se o launcher-main está atualizado, executando uma consulta na database;`
-	`+ Ele prescisa fazer a verificação de atualização, pois somente o `launcher` atualizado irá baixar os arquivos que foram atualizados naquela versão correspondente;`
-	`+ Ele possui um código simples e limpo, e é bem interativo na questão do frame.`
+	`Ele verifica se o launcher-main está atualizado, executando uma consulta na database;`
+	`Ele prescisa fazer a verificação de atualização, pois somente o `launcher` atualizado 
+	irá baixar os arquivos que foram atualizados naquela versão correspondente;`
+	`Ele possui um código simples e limpo, e é bem interativo na questão do frame.`
 
 ## Notas do código
 
-	- Foi desenvolvido em `VBasic/.NET` para rodar nas versões mais simples de `.NET Framework`, mantendo assim a transparência entre os sistemas operacionais.
-	- Na rotina do programa, ele deve ler uma database e uma tabela específica, contendo no mínimo 3 células.
-	- Uma célula `id (int ou longint)` para controle do DBA sobre a quantidade de atualizações, uma célula `data (dia da atualização)` para controle do DBA sobre o dia que foi atualizado e uma célula `ver (LAST)`, onde está terá valor `LAST` quando for a atualização atual.
-	- O updater deve verficar quando a `data` dessa `ver`=='LAST' correspondente, for igual a data de criação do launcher-main.
+	- Foi desenvolvido em `VBasic/.NET` para rodar nas versões mais simples de `.NET Framework`, 
+	mantendo assim a transparência entre os sistemas operacionais.
+	- Na rotina do programa, ele deve ler uma database e uma tabela específica, 
+	contendo no mínimo 3 células.
+	- Uma célula `id (int ou longint)` para controle do DBA sobre a quantidade de atualizações,
+	 uma célula `data (dia da atualização)` para controle do DBA sobre o dia que foi atualizado 
+	 e uma célula `ver (LAST)`, onde está terá valor `LAST` quando for a atualização atual.
+	- O updater deve verficar quando a `data` dessa `ver`=='LAST' correspondente, for igual a 
+	data de criação do launcher-main.
 	- Quando for o DBA for executar uma manobra de atualização, ele deve dar um `UPDATE` em todas as células `ver`, tornando com que nenhuma delas fique com o valor `LAST`.
 	- Após isso, ele deve dar um `INSERT` alocando 'LAST' na célula `ver` nesta linha da tabela, significando que agora essa é a atualização atual.
 	
