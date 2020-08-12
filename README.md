@@ -6,7 +6,7 @@ Simple API for update launcher of GC in VB
 </p>
 <p>
 <p align="left">
-  	<img alt="PT-BR" src="" />
+  	<img alt="PT-BR" src="https://imgur.com/a/iYd87ii" width="30" height="30"/>
 </p>
 ## Conteúdo
 
@@ -28,8 +28,10 @@ Esse projeto contém o updater, o arquivo que atualiza o `launcher-main` do meu 
 	 e uma célula `ver (LAST)`, onde está terá valor `LAST` quando for a atualização atual.
 	- O updater deve verficar quando a `data` dessa `ver`=='LAST' correspondente, for igual a 
 	data de criação do launcher-main.
-	- Quando for o DBA for executar uma manobra de atualização, ele deve dar um `UPDATE` em todas as células `ver`, tornando com que nenhuma delas fique com o valor `LAST`.
-	- Após isso, ele deve dar um `INSERT` alocando 'LAST' na célula `ver` nesta linha da tabela, significando que agora essa é a atualização atual.
+	- Quando for o DBA for executar uma manobra de atualização, ele deve dar um `UPDATE` 
+	em todas as células `ver`, tornando com que nenhuma delas fique com o valor `LAST`.
+	- Após isso, ele deve dar um `INSERT` alocando 'LAST' na célula `ver` nesta linha da tabela, 
+	significando que agora essa é a atualização atual.
 	
 	*Exemplo:
 	Considere a tabela `atualizações` abaixo:
@@ -60,14 +62,17 @@ Esse projeto contém o updater, o arquivo que atualiza o `launcher-main` do meu 
 	|073|2020-12-29 |LAST	|
 	-------------------------
 `
-	3. Ao iniciar o updater ele verifica se a data da última atualização(`data`), quando `ver==LAST`, é igual a data de criação do `launcher-main`.
+	3. Ao iniciar o updater ele verifica se a data da última atualização(`data`), 
+	quando `ver==LAST`, é igual a data de criação do `launcher-main`.
 
 	*Necessário compilar, e o código inclui comentários para explicar melhor.
 
 
 ## Receita do componente
 
-	Basta colocar na pasta raiz do game, e indicar o caminho do seu launcher/starter do game e criar a lógica de download do arquivo. E também configurar sua comunicação com o banco de dados em:
+	Basta colocar na pasta raiz do game, e indicar o caminho do seu launcher/starter do game, 
+	criar a lógica de download do arquivo, e também configurar sua comunicação com o 
+	banco de dados em:
 	`objcon = New SqlClient.SqlConnection("Data Source= meu computador; INITIAL CATALOG= launcher ; USER=sa; PASSWORD:123456;")`
 
 ## Notas do contribuidor
@@ -81,5 +86,5 @@ O projeto é público e de uso livre, mas um agradecimento é sempre bem vindo h
 by dikdama [GitHub:r0t1v - Discord:dikdama#9689]
 
 <p align="left">
-  	<img alt="EN-US" src="" />
+  	<img alt="EN-US" src="https://imgur.com/a/atJm5rL" width="30" height="30" />
 </p>
