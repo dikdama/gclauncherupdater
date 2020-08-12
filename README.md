@@ -27,11 +27,11 @@ contendo no mínimo 3 células.
 - Uma célula `id (int ou longint)` para controle do DBA sobre a quantidade de atualizações,
  uma célula `data (dia da atualização)` para controle do DBA sobre o dia que foi atualizado 
  e uma célula `ver (LAST)`, onde está terá valor `LAST` quando for a atualização atual.
-- O updater deve verficar quando a `data` dessa `ver`=='LAST' correspondente, for igual a 
+- O updater deve verficar quando a `data` dessa `ver`==`LAST` correspondente, for igual a 
 data de criação do launcher-main.
 - Quando for o DBA for executar uma manobra de atualização, ele deve dar um `UPDATE` 
 em todas as células `ver`, tornando com que nenhuma delas fique com o valor `LAST`.
-- Após isso, ele deve dar um `INSERT` alocando 'LAST' na célula `ver` nesta linha da tabela, 
+- Após isso, ele deve dar um `INSERT` alocando `LAST` na célula `ver` nesta linha da tabela, 
 significando que agora essa é a atualização atual.
 
 *Necessário compilar, e o código inclui comentários para explicar melhor.*
@@ -42,7 +42,7 @@ Basta colocar na pasta raiz do game, e indicar o caminho do seu launcher/starter
 criar a lógica de download do arquivo, e também configurar sua comunicação com o 
 banco de dados em:
 
-	objcon = New SqlClient.SqlConnection("Data Source= meu computador; INITIAL CATALOG= launcher ; USER=sa; PASSWORD:123456;")
+	objcon = New SqlClient.SqlConnection("Data Source=meu computador; INITIAL CATALOG=launcher ; USER=sa; PASSWORD=123456;")
 
 ## Deployed
 
@@ -88,7 +88,7 @@ containing at least 3 cells.
 launcher-main creation date.
 - When the DBA is going to perform an update maneuver, he must give an `UPDATE`
 in all the `ver` cells, making sure that none of them have the `LAST` value.
-- After that, he must give an `INSERT` allocating 'LAST' in the cell `ver` in this row of the table,
+- After that, he must give an `INSERT` allocating `LAST` in the cell `ver` in this row of the table,
 meaning that this is now the current update.
 
 * Necessary to compile, and the code includes comments to explain further. *
@@ -99,7 +99,7 @@ Just put in the game's root folder, and indicate the path of your game launcher 
 create the download logic of the file, and also configure its communication with the
 database in:
 
-objcon = New SqlClient.SqlConnection ("Data Source = my computer; INITIAL CATALOG = launcher; USER = sa; PASSWORD: 123456;")
+objcon = New SqlClient.SqlConnection ("Data Source=my computer; INITIAL CATALOG=launcher; USER=sa; PASSWORD=123456;")
 
 ## Deployed
 
@@ -116,4 +116,4 @@ As soon as I have time, I intend to check the issues and fixes from time to time
 Any questions about something in the project, you can tell me.
 The project is public and free to use, but thanks are always welcome hahaha.
 The r0t1v and dikdama accounts are mine, the r0t1v is personal and dikdama is for me to play hahahaha.
-by dikdama GitHub: [r0t1v](https://github.com/r0t1v) - [dikdama](https://github.com/dikdama) - Discord: dikdama # 9689
+by dikdama GitHub: [r0t1v](https://github.com/r0t1v) - [dikdama](https://github.com/dikdama) - Discord: dikdama #9689
