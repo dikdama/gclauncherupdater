@@ -6,7 +6,7 @@ Simple API for update launcher of GC in VB
 </p>
 <p>
 <p align="left">
-  	<img alt="PT-BR" src="https://imgur.com/a/iYd87ii" width="30" height="30"/>
+  	<img alt="PT-BR" src="https://i.imgur.com/3fl9Sfi.gif" width="30" height="30"/>
 </p>
 ## Conteúdo
 
@@ -35,30 +35,30 @@ significando que agora essa é a atualização atual.
 	
 - Exemplo:
 Considere a tabela `atualizações` abaixo:
-`-----------------------
+
 |id |	 data 	| ver 	|
 |010|2020-08-09 |old1	|
 |011|2020-08-26 |old2	|
 |025|2020-09-10	|old65	|
 |036|2020-10-21	|LAST	|
--------------------------`
+
 1. Manobra de atualização 
-`-----------------------
+
 |id |	 data 	| ver 	|
 |010|2020-08-09 |old1	|
 |011|2020-08-26 |old2	|
 |025|2020-09-10	|old65	|
 |036|2020-10-21	|fixbug2|
--------------------------`
+
 2. Finalizando
-`-----------------------
+
 |id |	 data 	| ver 	|
 |010|2020-08-09 |old1	|
 |011|2020-08-26 |old2	|
 |025|2020-09-10	|old65	|
 |036|2020-10-21	|fixbug2|
 |073|2020-12-29 |LAST	|
--------------------------`
+
 3. Ao iniciar o updater ele verifica se a data da última atualização(`data`), 
 quando `ver==LAST`, é igual a data de criação do `launcher-main`.
 
@@ -69,7 +69,8 @@ quando `ver==LAST`, é igual a data de criação do `launcher-main`.
 Basta colocar na pasta raiz do game, e indicar o caminho do seu launcher/starter do game, 
 criar a lógica de download do arquivo, e também configurar sua comunicação com o 
 banco de dados em:
-`objcon = New SqlClient.SqlConnection("Data Source= meu computador; INITIAL CATALOG= launcher ; USER=sa; PASSWORD:123456;")`
+`objcon = New SqlClient.SqlConnection("Data Source= meu computador; 
+INITIAL CATALOG= launcher ; USER=sa; PASSWORD:123456;")`
 
 ## Notas do contribuidor
 
@@ -82,5 +83,5 @@ O projeto é público e de uso livre, mas um agradecimento é sempre bem vindo h
 by dikdama [GitHub:r0t1v - Discord:dikdama#9689]
 
 <p align="left">
-  	<img alt="EN-US" src="https://imgur.com/a/atJm5rL" width="30" height="30" />
+  	<img alt="EN-US" src="https://i.imgur.com/QqtGoQ4.gif" width="30" height="30" />
 </p>
