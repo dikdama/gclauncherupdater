@@ -44,6 +44,16 @@ banco de dados em:
 
 	objcon = New SqlClient.SqlConnection("Data Source=meu computador; INITIAL CATALOG=launcher ; USER=sa; PASSWORD=123456;")
 
+## Exemplo 
+
+<p align="center">
+  	<img alt="exemplo" src="https://i.imgur.com/WvbEiyF.png" width="854" height="148" />
+</p>
+
+*Ao inicia o `updater` ele verifica a se a data de atualização quando `ver == LAST`, 
+é igual a data de criação do `launcher-main`*
+
+
 ## Deployed
 
 <p align="center">
@@ -99,7 +109,16 @@ Just put in the game's root folder, and indicate the path of your game launcher 
 create the download logic of the file, and also configure its communication with the
 database in:
 
-objcon = New SqlClient.SqlConnection ("Data Source=my computer; INITIAL CATALOG=launcher; USER=sa; PASSWORD=123456;")
+	objcon = New SqlClient.SqlConnection ("Data Source=my computer; INITIAL CATALOG=launcher; USER=sa; PASSWORD=123456;")
+
+## Exemplo 
+
+<p align="center">
+  	<img alt="exemplo" src="https://i.imgur.com/WvbEiyF.png" width="854" height="148" />
+</p>
+
+* When starting `updater`, it checks if the update date, when` ver == LAST`,
+equals the `launcher-main` creation date *
 
 ## Deployed
 
