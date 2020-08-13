@@ -50,7 +50,7 @@ banco de dados em:
   	<img alt="exemplo" src="https://i.imgur.com/WvbEiyF.png" width="854" height="148" />
 </p>
 
-*Ao inicia o `updater` ele verifica a se a data de atualização quando `ver == LAST`, 
+*Ao iniciar o `updater` ele verifica a se a data de atualização quando `ver == LAST`, 
 é igual a data de criação do `launcher-main`*
 
 
