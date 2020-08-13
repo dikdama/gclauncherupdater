@@ -23,6 +23,7 @@
 Public Class updatersplash
     Dim tempoup As Integer = 0
     Private objbanco As New acessobd
+    Dim download As New Net.WebClient
     'Ao carregar ele executa inicializações (ainda não está com testes condicionais(if e else) necessários, mas se quiser rodar está funcionando normalmente).'
     'When loading it performs initializations (it doesn't have the necessary conditional tests (if and else) yet, but if it wants to run it's working normally).'
     Private Sub updatersplash_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -55,4 +56,25 @@ Public Class updatersplash
         tempoup = tempoup + 1
         letsbora()
     End Sub
+    ' Private Sub downprogresso(ByVal sender As Object, ByVal e As System.Net.DownloadProgressChangedEventArgs)
+    '    textupdate.Text = "Atualizando... " & e.ProgressPercentage & "%"
+    ' End Sub
+    'Private Sub downcompleted(ByVal sender As Object, ByVal e As System.ComponentModel.AsyncCompletedEventArgs)
+    '   textupdate.Text = "Pronto!"
+    'End Sub
+    'Private Sub ativaeventos()
+    'AddHandler() download.DownloadProgressChanged, AddressOf downprogresso
+    'AddHandler() download.DownloadFileCompleted, AddressOf downcompleted
+    'End Sub
+
+    'Private Sub baixar(ByVal arquivo As String, ByVal destino As String)
+    'Try
+    'Dim urlweb As Uri(arquivo)
+    '       download.DownloadFileAsync(urlweb, destino)
+    'Catch e As Exception
+    '       MessageBox.Show(e.Message)
+    'End Try
+    'End Sub
+
+
 End Class
