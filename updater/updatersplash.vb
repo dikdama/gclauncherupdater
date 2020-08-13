@@ -30,11 +30,11 @@ Public Class updatersplash
         Me.TransparencyKey = Me.BackColor
         Timeupdate.Start()
         textupdate.Text = "Conectando a database..."
-        objbanco.conectar()
+        'objbanco.conectar()
         'O dataset absorve a string, que é transformada em comando pelo datatadapter e datacomand.'
         'The dataset absorbs the string, which is transformed into a command by the datatadapter and datacomand.'
         'Dim dataset As DataSet = '
-        objbanco.executequery("INSERT INTO dbo.mainlauncher(idver,data,ver) VALUES ('250','2020-07-26','NOLAST')")
+        'objbanco.executequery("INSERT INTO dbo.mainlauncher(idver,data,ver) VALUES ('250','2020-07-26','NOLAST')")
     End Sub
     'Função só pra init sem testar a conexão do banco'
     'Function only for init without testing the bank connection'
