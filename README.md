@@ -111,7 +111,7 @@ database in:
 
 	objcon = New SqlClient.SqlConnection ("Data Source=my computer; INITIAL CATALOG=launcher; USER=sa; PASSWORD=123456;")
 
-## Exemplo 
+## Example
 
 <p align="center">
   	<img alt="exemplo" src="https://i.imgur.com/WvbEiyF.png" width="854" height="148" />
